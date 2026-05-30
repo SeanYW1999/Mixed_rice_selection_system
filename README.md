@@ -135,21 +135,9 @@ MRPM（表格版）輸出欄位 / MRPM (table version) columns:
 ## 重要假設與限制 / Assumptions & Limitations
 **中文：**
 - 混米資料為合成資料：特徵以線性混合生成，未必完全反映真實混米的物理/化學過程
-- 分類器比較使用 Accuracy；若資料不平衡，建議額外報告 F1、balanced accuracy 等指標
-- MRPM 的「最佳模型」目前為人工指定（程式中用 polynomial SVM + lm），未自動依比較結果選出
-
+- 分類器比較使用 Accuracy；若資料不平衡，可以增加 Macro-F1、G-mean 等指標
+- 
 **English:**
 - Mixed samples are synthetic (linear mixing), which may not fully reflect real-world mixing processes
 - Accuracy is the primary metric; for imbalanced data, consider reporting F1 / balanced accuracy
-- The “best” MRPM is currently chosen manually in the script (polynomial SVM + lm), not automatically selected based on comparison results
-
 ---
-
-## 專案結構（建議）/ Suggested Repo Structure
-```text
-.
-├─ data/            # raw data (optional; avoid committing large files)
-├─ scripts/         # R scripts
-├─ results/         # exported predictions / figures
-├─ README.md
-└─ LICENSE
