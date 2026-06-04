@@ -63,10 +63,10 @@ where `ratio_t` is randomly sampled from 0.1 to 0.9 (step 0.1), and `ratio_v = 1
 
 ### 2) 分類任務 / Classification Task
 **中文：**  
-建立三分類資料集：`Taiwan / Vietnam / Mixed`，並訓練比較多種分類模型（例如 LDA、PLS、Ridge、LASSO、Random Forest、SVM），以 **Accuracy** 為主要指標評估訓練集與測試集表現。
+建立三分類資料集：`Taiwan / Vietnam / Mixed`，並訓練比較多種分類模型（例如 LDA、Random Forest、SVM），以 **Accuracy** 為主要指標評估訓練集與測試集表現。
 
 **English:**  
-A 3-class classification dataset is built: `Taiwan / Vietnam / Mixed`. Multiple classifiers (e.g., LDA, PLS, Ridge, LASSO, Random Forest, SVM) are trained and evaluated using **Accuracy** on both train and test sets.
+A 3-class classification dataset is built: `Taiwan / Vietnam / Mixed`. Multiple classifiers (e.g., LDA, Random Forest, SVM) are trained and evaluated using **Accuracy** on both train and test sets.
 
 ---
 
@@ -103,8 +103,8 @@ In the current script, MRPM uses **polynomial-kernel SVM** for classification an
 ## 使用方式 / Usage
 
 ### 需求套件 / Dependencies
-**中文：** R 套件：`caret`, `MASS`, `pls`, `glmnet`, `randomForest`, `e1071`  
-**English:** R packages: `caret`, `MASS`, `pls`, `glmnet`, `randomForest`, `e1071`
+**中文：** R 套件：`caret`, `MASS`, `randomForest`, `e1071`  
+**English:** R packages: `caret`, `MASS`, `randomForest`, `e1071`
 
 ### 執行流程 / Typical Workflow
 **中文：**
